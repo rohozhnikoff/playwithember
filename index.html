@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>playwithember</title>
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+
+	<script type='text/javascript' src='bower_components/jquery/dist/jquery.js'></script>
+	<script type='text/javascript' src='bower_components/underscore/underscore.js'></script>
+	<script type='text/javascript' src="bower_components/handlebars/handlebars.js"></script>
+	<script type='text/javascript' src="bower_components/ember/ember.js"></script>
+	<script type="text/javascript">
+		App = Ember.Application.create({
+
+		});
+
+		App.ApplicationController = Ember.Controller.extend({
+			message: 'fuckme, its message'
+		});
+	</script>
+</head>
+<body>
+
+
+
+<script type="text/x-handlebars" data-template-name="application">
+  <div class="container">
+    <h1>hello ember</h1>
+    <p>{{message}}</p>
+  </div>
+</script>
+</body>
+</html>
